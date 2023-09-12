@@ -13,7 +13,7 @@ export const Wrapper = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: opacity 0.3s color 0.3s background-color 0.3s;
+  transition: opacity 0.3s, color 0.3s, background-color 0.3s;
 
   &:hover {
     opacity: 0.7;

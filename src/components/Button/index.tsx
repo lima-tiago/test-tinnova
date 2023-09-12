@@ -9,7 +9,7 @@ export type ButtonProps = {
 export const Button = ({ isLoading, children, ...props }: ButtonProps) => {
   if (isLoading) {
     return (
-      <S.Wrapper {...props}>
+      <S.Wrapper disabled {...props}>
         <S.Loading />
       </S.Wrapper>
     );
