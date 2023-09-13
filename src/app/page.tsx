@@ -1,5 +1,6 @@
 "use client";
 import { ChangeEvent, FormEvent, useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import { Button, Input } from "@/components";
 import * as S from "./styles";
 import { cpfMask, maskPhone } from "@/utils";
@@ -7,6 +8,7 @@ import { cpfMask, maskPhone } from "@/utils";
 export default function Home() {
   const [hasSended, setHasSended] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const router = useRouter();
   const [values, setValues] = useState({
     name: "",
     email: "",
@@ -49,6 +51,7 @@ export default function Home() {
     // Apenas um timeout para simular a espera da comunicação com a API...
     setTimeout(() => {
       setIsLoading(false);
+      router.push("/users");
     }, 2000);
   };
 
