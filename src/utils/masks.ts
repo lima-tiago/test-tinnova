@@ -12,7 +12,8 @@ export const cpfMask = (value: string) => {
 export const maskPhone = (value: string) => {
   value = value.replace(/\D/g, "");
   value = value.slice(0, 11);
-  return value
-    .replace(/(\d{2})(\d)/, "($1) $2")
-    .replace(/(\d{5})(\d{4})/, "$1-$2");
+  if (value.length <= 10) {
+    return value.replace(/(\d{2})(\d{4})(\d{4})/, "($1) $2-$3");
+  }
+  return value.replace(/(\d{2})(\d{5})(\d{4})/, "($1) $2-$3");
 };
