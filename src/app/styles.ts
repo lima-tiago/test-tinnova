@@ -1,5 +1,5 @@
 "use client";
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, styled } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   *,
@@ -20,6 +20,33 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     overflow-scrolling: touch;
     background: #ffffff;
+  }
+`;
+
+export const Main = styled.main`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 16px;
+
+  input {
+    margin-bottom: 16px;
+  }
+
+  form {
+    width: 600px;
+    max-width: 100%;
+
+    > div {
+      width: 100%;
+    }
+
+    > button {
+      width: 100%;
+      margin: 24px 0;
+    }
   }
 `;
 
