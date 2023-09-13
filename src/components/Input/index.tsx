@@ -7,7 +7,7 @@ type InputProps = {
   label: string;
 } & InputHTMLAttributes<HTMLInputElement>;
 
-export const Input = ({ id, label, ...props }: InputProps) => {
+const Input = ({ id, label, ...props }: InputProps) => {
   return (
     <S.Wrapper>
       <input id={id} placeholder=" " {...props} />
@@ -15,3 +15,5 @@ export const Input = ({ id, label, ...props }: InputProps) => {
     </S.Wrapper>
   );
 };
+
+export { Input };
