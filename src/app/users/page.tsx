@@ -16,7 +16,7 @@ type UsersProps = {
 };
 
 export default function Users({ usersMock }: UsersProps) {
-  const [users, setUsers] = useState<IUsers[]>(usersMock || []);
+  const [users, setUsers] = useState<IUsers[] | null>(usersMock || null);
 
   const getInitialData = useCallback(async () => {
     if (!usersMock) {
