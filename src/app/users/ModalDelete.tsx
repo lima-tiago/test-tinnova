@@ -13,7 +13,6 @@ export const ModalDelete = ({ userSelected, onClose }: ModalDeleteProps) => {
     const newUsers = usersParsed.filter(
       (user: IUsers) => user.cpf !== userSelected.cpf
     );
-    console.log(newUsers);
     localStorage.setItem("usersTinnova", JSON.stringify(newUsers));
     onClose();
   };
