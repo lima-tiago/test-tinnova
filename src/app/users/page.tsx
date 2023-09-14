@@ -2,8 +2,8 @@
 import { useCallback, useEffect, useState } from "react";
 import { Button, Card } from "@/components";
 import { cpfMask, maskPhone } from "@/utils";
-import IconEdit from "assets/iconEdit.svg";
-import IconTrash from "assets/iconTrash.svg";
+import IconEdit from "@/assets/iconEdit.svg";
+import IconTrash from "@/assets/iconTrash.svg";
 import * as S from "./styles";
 import { ModalEdit } from "./ModalEdit";
 import { ModalDelete } from "./ModalDelete";
