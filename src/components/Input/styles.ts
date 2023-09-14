@@ -33,6 +33,7 @@ export const Wrapper = styled.div`
     width: 100%;
     font-size: 16px;
     transition: border 0.3s;
+    margin-bottom: 16px;
 
     & ~ span {
       position: absolute;

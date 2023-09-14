@@ -6,6 +6,7 @@ export type ButtonProps = {
   isLoading?: boolean;
   type?: string;
   disabled?: boolean;
+  negative?: boolean;
 } & ButtonHTMLAttributes<HTMLButtonElement>;
 
 export const Button = ({

@@ -31,10 +31,6 @@ export const Main = styled.main`
   width: 100%;
   padding: 16px;
 
-  input {
-    margin-bottom: 16px;
-  }
-
   form {
     width: 600px;
     max-width: 100%;

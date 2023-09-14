@@ -1,8 +1,10 @@
 import { styled, keyframes } from "styled-components";
+import { ButtonProps } from ".";
 
 export const Wrapper = styled.button`
-  background: #00c8b3;
-  color: #ffffff;
+  background: ${({ negative }: ButtonProps) =>
+    negative ? "transparent" : "#00c8b3"};
+  color: ${({ negative }: ButtonProps) => (negative ? "#eb4a46" : "#ffffff")};
   border-radius: 99px;
   padding: 16px 24px;
   border: none;
