@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { Card } from "@/components";
+import { Card } from "..";
 
 export const Wrapper = styled.div`
   position: fixed;

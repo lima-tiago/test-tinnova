@@ -2,7 +2,7 @@
 import { InputHTMLAttributes } from "react";
 import * as S from "./styles";
 
-type InputProps = {
+export type InputProps = {
   id: string;
   label: string;
   errorMessage?: string;

@@ -1,5 +1,5 @@
 "use client";
-import { cpfMask, maskPhone } from "@/utils";
+import { cpfMask, maskPhone } from "../../utils";
 import { useRouter } from "next/navigation";
 import { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import { Input, Button } from "..";
